@@ -1,0 +1,498 @@
+/*
+Style Reset
+*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*
+Commo Used Styles
+*/
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.text-normal{
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    color: #6A707B;
+}
+
+/*
+Left Part
+*/
+
+#main{
+    width: 680px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+}
+
+/*
+Menu
+*/
+
+#menu{
+    height: 40px;
+    width: 480px;
+    margin: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+#logo_text{
+    margin-left: 11px;
+    margin-bottom: 4px;
+}
+#bars{
+    display: flex;
+    align-items: flex-end;
+}
+#bars a{
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+
+/*
+Form container
+*/
+
+#cn{
+    padding-top: 134px;
+    padding-left: 100px;
+}
+#action{
+    padding-left: 40px;
+}
+#cup{
+    display: none;
+    margin-bottom: 30px;
+}
+h1{
+    font-family: Georgia;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 44px;
+    color: #131821;
+    margin-bottom: 15px;
+}
+#action-p{
+    line-height: 28px;
+    margin-bottom: 50px;
+    width: 400px;
+}
+
+/*
+Form
+*/
+
+form{
+    margin-left: -40px;
+}
+
+/*
+Form - Email
+*/
+
+#eb{
+    display: flex;
+    width: 663px;
+    border-left: 4px solid #4066a5;
+    border-top: 1px solid #E3E3E4;
+    border-bottom: 1px solid #E3E3E4;
+    border-right: 1px solid #E3E3E4;
+}
+#eb:hover{
+    box-shadow: 0px 30px 40px 0px #1318210F;
+    border-top: 1px solid #4066a5;
+    border-bottom: 1px solid #4066a5;
+    border-right: 1px solid #4066a5;
+    outline: none;
+}
+#eb:hover input[type=submit]{
+    background-image: url("Image/ic_arrow_hover.svg");
+}
+
+input[type=email]{
+    height: 70px;
+    width: 663px;  
+    border:none;
+    padding-left: 40px;
+}
+input[type=email]:focus{
+    box-shadow: 0px 30px 40px 0px #1318210F;
+    outline: none;
+}
+
+input[type=submit]{
+    background: white;
+    width: 83px;
+    border: none;
+    background-image: url("Image/ic_arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 19px;
+}
+input[type=submit]:hover{
+    cursor: pointer;
+}
+
+/*
+Form - Error
+*/
+
+#err_div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.error{
+    line-height: 24px;
+    color: #935353;
+}
+
+/*
+Form - TOS
+*/
+
+#ct{
+    display: flex;
+    align-items: flex-end;
+}
+input[type="checkbox"]{
+    display: none;
+}
+.check_cont{
+    display: block;
+    position: relative;
+    padding-left: 41px;
+    margin-bottom: 10px;
+    margin-top: 53px;   
+    margin-left: 40px;
+    height: 28px;
+}
+.check_span {
+    position: absolute;
+    left: 0px;
+    height: 26px;
+    width: 26px;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    border: 1px solid #4066a5;
+}
+.check_cont:hover input:not([disabled]) ~ .check_span {
+    outline: 2px solid rgba(64, 103, 165, 0.3);
+    cursor: pointer;
+}
+.check_cont input:checked ~ .check_span {
+    background-color: #4066A5;
+}
+.check_span_check {
+    position: absolute;
+    display: none;
+}
+.check_cont input:checked ~ .check_span_check {
+    display: block;
+}  
+.check_cont .check_span_check {
+    left: 11px;
+    top: 5px;
+    width: 5px;
+    height: 15px;
+    border: solid white;
+    border-width: 0px 2px 2px 0;
+    transform: rotate(45deg);
+}
+#action-p2{
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+#action-p2 a {
+    color: black;
+}
+#action-p2 a:hover {
+    color: #4066A5;
+}
+#action-p2 a:active{
+    color: #233759;
+}
+
+/*
+Line
+*/
+
+hr{
+    width: 400px;
+    background: #E3E3E4;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*
+Icons
+*/
+
+#icons{
+    display: flex;
+    margin-left: 78px;
+    margin-bottom: 30px;
+}
+.ico{
+    margin-right: 20px;
+}
+.div_c{
+    height: 46px;
+    width: 46px;
+    border-radius: 50px;
+    border: 2px solid #E3E3E4;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.div_c:hover{
+    box-shadow: 0px 20px 40px 0px #1318214D;
+}
+#fac{
+    background-image: url("Image/ic_facebook.svg");
+    background-repeat: no-repeat;
+    background-position: 17px;
+}
+#fac:hover{
+    background-color: #4267B2;
+    background-image: url("Image/ic_facebook_hover.svg");
+}
+#fac:active{
+    background-color: #2F4A80;
+    background-image: url("Image/ic_facebook_hover.svg");
+}
+#ins{
+    background-image: url("Image/ic_instagram.svg");
+    background-repeat: no-repeat;
+    background-position: 13px;
+}
+#ins:hover{
+    background-color: #C13584;
+    background-image: url("Image/ic_instagram_hover.svg");
+}
+#ins:active{
+    background-color: #8F2762;
+    background-image: url("Image/ic_instagram_hover.svg");
+}
+#twi{
+    background-image: url("Image/ic_twitter.svg");
+    background-repeat: no-repeat;
+    background-position: 13px;
+}
+#twi:hover{
+    background-color: #1DA1F2;
+    background-image: url("Image/ic_twitter_hover.svg");
+}
+#twi:active{
+    background-color: #177FBF;
+    background-image: url("Image/ic_twitter_hover.svg");
+}
+#you{
+    background-image: url("Image/ic_youtube.svg");
+    background-repeat: no-repeat;
+    background-position: 13px;
+}
+#you:hover{
+    background-color: #FF0000;
+    background-image: url("Image/ic_youtube_hover.svg");
+}
+#you:active{
+    background-color: #CC0000;
+    background-image: url("Image/ic_youtube_hover.svg");
+}
+
+
+/*
+Right Part
+*/
+
+#photo{
+    height: 100%;
+    width: calc(100vw - 680px);
+    overflow: hidden;
+    z-index: -2;
+}
+
+/****************
+Responsive Design
+****************/
+
+
+/*
+Correct Photo Streching
+*/
+
+@media only screen and (min-width: 1920px) {
+    #photo img{
+        width: 100%;
+    }
+}
+@media only screen and (min-height: 1080px) {
+    #photo img{
+        height: 100%;
+    }
+}
+
+/*
+Correct Left Part Streching
+*/
+
+@media only screen and (max-height: 885px) and (min-width: 763px) {
+    body{
+        height: 885px;
+    }
+}
+
+/*
+Main Responsive Design
+*/
+
+@media only screen and (max-width: 763px) {
+    body{
+        position: relative;
+    }
+
+    /*
+    Left Part
+    */
+
+    #main{
+        background: transparent;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*
+    Menu
+    */
+
+    #menu{
+        background: #FFFFFF;
+        margin: 0;
+        height: 66px;
+        width: 100%;
+    }
+    #logo{
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 16px;
+    }
+    #logo_text{
+        display: none;
+    }
+    #bars{
+        align-items: center;
+    }    
+    #bars a{
+        font-size: 14px;
+        line-height: 24px;
+        margin-left: unset;
+        margin-right: 20px;
+    }
+
+    /*
+    Form container
+    */
+
+    #cn{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        padding: 0;
+    }
+    #action{
+        background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+        margin: 0 20px;
+        width: 100%;
+        padding: 30px 20px;
+    }   
+    h1{
+        margin-bottom: 10px;
+        width: auto;        
+        font-size: 24px;
+        line-height: 34px;
+    }
+    #action-p{  
+        margin-bottom: 20px;
+        width: auto;
+        font-size: 14px;
+    }
+
+    /*
+    Form
+    */
+
+    form{
+        margin: 0;
+    }
+
+    /*
+    Form - Email
+    */
+
+    #eb{        
+        width: 100%;
+    }
+    input[type=email]{
+        width: 100%;
+        padding-left: 15px;
+        height: 60px;
+    }
+    input[type=submit]{
+        background-position: 0;
+        width: 39px;
+    }
+
+    /*
+    Form - TOS
+    */
+
+    .check_cont{
+        margin-top: 20px;   
+        margin-left: 0px;
+    }
+
+    /*
+    Line
+    */
+
+    hr{
+        margin: 20px 0 ;
+        width: unset;
+    }
+
+    /*
+    Icons
+    */
+
+    .ico{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #icons{
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    /*
+    Right Part
+    */
+
+    #photo{
+        width: 100%;
+    }
+}
